@@ -21,7 +21,7 @@
 | `fuzzel/` | Fuzzel 应用启动器配置 |
 | `niri/` | Niri 窗口管理器配置 |
 | `waybar/` | Waybar 状态栏配置、样式及脚本 |
-| `scripts/` | 个人脚本 |
+| `screenshot/` | 截图 |
 
 ## 设计风格
 
