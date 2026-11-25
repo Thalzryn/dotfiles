@@ -1,0 +1,71 @@
+
+{
+    // Waybar 基础设置
+    "layer": "top",
+    "position": "top",
+    "height": 30,
+    "spacing": 6,
+
+    // 左侧：硬件监控
+    "modules-left": [
+        "cpu",
+        "memory",
+        "custom/gpu"
+    ],
+
+    // 中间：日期与时间
+    "modules-center": [
+        "clock"
+    ],
+
+    // 右侧：网络与托盘
+    "modules-right": [
+        "network",
+        "tray"
+    ],
+
+    // CPU 使用率
+    "cpu": {
+        "format": "CPU {usage}%",
+        "tooltip": false,
+        "interval": 2
+    },
+
+    // 内存使用率
+    "memory": {
+        "format": "RAM {percentage}%",
+        "tooltip": true,
+        "interval": 2
+    },
+
+    // AMD GPU 使用率与温度
+    "custom/gpu": {
+        "exec": "~/.config/waybar/gpu.sh",
+        "return-type": "json",
+        "interval": 2,
+        "tooltip": true
+    },
+
+    // 网络状态与实时速度
+    "network": {
+        "format-wifi": "WIFI {essid} ↓ {bandwidthDownBytes} ↑ {bandwidthUpBytes}",
+        "format-ethernet": "ETH ↓ {bandwidthDownBytes} ↑ {bandwidthUpBytes}",
+        "format-disconnected": "NET disconnected",
+        "tooltip-format": "{ifname}\nIP: {ipaddr}\n网关: {gwaddr}",
+        "tooltip": true,
+        "interval": 2
+    },
+
+    // 时间与日期
+    "clock": {
+        "format": "{:%Y-%m-%d %H:%M:%S}",
+        "tooltip-format": "<big>{:%A}</big>\n<tt>{calendar}</tt>",
+        "interval": 1
+    },
+
+    // 系统托盘
+    "tray": {
+        "icon-size": 14,
+        "spacing": 6
+    }
+}

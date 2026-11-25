@@ -1,0 +1,129 @@
+/* =========================
+   全局字体
+   ========================= */
+* {
+    font-family: "JetBrainsMono Nerd Font", monospace;
+    font-size: 12px;
+    border: none;
+    border-radius: 0;
+    min-height: 0;
+}
+
+/* =========================
+   状态栏整体
+   ========================= */
+window#waybar {
+    background: #000000;
+    color: #ffffff;
+    border-bottom: 1px solid #333333;
+}
+
+/* =========================
+   模块布局
+   ========================= */
+.modules-left,
+.modules-center,
+.modules-right {
+    margin: 0;
+}
+
+.modules-left {
+    padding-left: 6px;
+}
+
+.modules-right {
+    padding-right: 6px;
+}
+
+/* 所有模块统一间距 */
+#cpu,
+#memory,
+#custom-gpu,
+#network,
+#clock,
+#tray {
+    padding: 0 8px;
+    margin: 0 2px;
+    background: transparent;
+    color: #ffffff;
+}
+
+/* =========================
+   鼠标悬停
+   ========================= */
+#cpu:hover,
+#memory:hover,
+#custom-gpu:hover,
+#network:hover,
+#clock:hover,
+#tray:hover {
+    background: #222222;
+}
+
+/* =========================
+   CPU
+   ========================= */
+#cpu {
+    color: #ffffff;
+}
+
+/* =========================
+   内存
+   ========================= */
+#memory {
+    color: #cccccc;
+}
+
+/* =========================
+   AMD GPU
+   ========================= */
+#custom-gpu {
+    color: #bbbbbb;
+}
+
+/* =========================
+   网络
+   ========================= */
+#network {
+    color: #cccccc;
+}
+
+#network.disconnected {
+    color: #888888;
+}
+
+/* =========================
+   时间与日期
+   ========================= */
+#clock {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* =========================
+   系统托盘
+   ========================= */
+#tray {
+    padding: 0 6px;
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+}
+
+/* =========================
+   Tooltip 提示框
+   ========================= */
+tooltip {
+    background: #111111;
+    color: #ffffff;
+    border: 1px solid #444444;
+}
+
+tooltip label {
+    color: #ffffff;
+}
