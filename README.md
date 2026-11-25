@@ -15,12 +15,13 @@
 
 ## 配置目录
 
-目录           说明
--------------- -------------------------------
-`alacritty/`   Alacritty 终端配置
-`fuzzel/`      Fuzzel 应用启动器配置
-`niri/`        Niri 窗口管理器配置
-`waybar/`      Waybar 状态栏配置、样式及脚本
+| 目录 | 说明 |
+|---|---|
+| `alacritty/` | Alacritty 终端配置 |
+| `fuzzel/` | Fuzzel 应用启动器配置 |
+| `niri/` | Niri 窗口管理器配置 |
+| `waybar/` | Waybar 状态栏配置、样式及脚本 |
+| `scripts/` | 个人脚本 |
 
 ## 设计风格
 
