@@ -17,10 +17,10 @@
 
 | 目录 | 说明 |
 |---|---|
-| `alacritty/` | Alacritty 终端配置 |
-| `fuzzel/` | Fuzzel 应用启动器配置 |
-| `niri/` | Niri 窗口管理器配置 |
-| `waybar/` | Waybar 状态栏配置、样式及脚本 |
+| `alacritty/` | 终端配置 |
+| `fuzzel/` | 应用启动器配置 |
+| `niri/` | 窗口管理器配置 |
+| `waybar/` | 状态栏配置、样式及脚本 |
 | `screenshot/` | 截图 |
 
 ## 设计风格
